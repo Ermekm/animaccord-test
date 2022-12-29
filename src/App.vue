@@ -1,5 +1,5 @@
 <template>
-  <MyButton color="primary" class="btn"></MyButton>
+  <MyButton :countdown="1">Повторное письмо</MyButton>
   <back-icon></back-icon>
 </template>
 
