@@ -1,7 +1,6 @@
 <template>
-  <MyButton color="primary" :icon="true" class="btn">
-    <back-icon></back-icon>
-  </MyButton>
+  <MyButton color="primary" class="btn"></MyButton>
+  <back-icon></back-icon>
 </template>
 
 <script>

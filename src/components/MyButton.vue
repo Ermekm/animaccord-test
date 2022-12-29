@@ -85,4 +85,20 @@ export default {
   color: #767679;
   fill: #767679;
 }
+
+@media (max-width: 639px) {
+  .btn {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    fill: #fff;
+    padding: 6px 16px;
+    box-sizing: border-box;
+  }
+
+  .btn.icon-wrapper {
+    padding: 14px;
+  }
+}
 </style>
