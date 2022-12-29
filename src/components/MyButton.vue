@@ -1,5 +1,8 @@
 <template>
-  <button :class="classArray" class="btn" @click="refreshTimer">
+  <button class="button-link" v-if="link">
+    <a :href="link" class="link"><slot></slot></a>
+  </button>
+  <button :class="classArray" class="btn" @click="refreshTimer" v-else>
     <slot>Кнопка</slot>
     <span class="timer-wrapper" v-if="countdown">
       {{ timer }}
@@ -24,6 +27,9 @@ export default {
     },
     countdown: {
       type: Number,
+    },
+    link: {
+      type: String,
     },
   },
   computed: {
@@ -157,6 +163,27 @@ export default {
   border-radius: 10px 15px 20px 15px / 15px 25px 30px 25px;
 }
 /* timer styles end */
+
+/* link styles start */
+.button-link {
+  background: transparent;
+  border: none;
+}
+
+.link {
+  color: #fff;
+  font-family: "Nunito";
+  font-weight: bold;
+}
+
+.link:hover {
+  color: #767679;
+}
+
+.link:active {
+  color: #c4296c;
+}
+/* link styles end */
 
 @media (max-width: 639px) {
   .btn {

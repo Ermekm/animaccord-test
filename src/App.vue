@@ -1,5 +1,6 @@
 <template>
-  <MyButton :countdown="1">Повторное письмо</MyButton>
+  <MyButton link="https://www.google.com/"> Google</MyButton>
+  <MyButton link="https://www.google.com/"> Google</MyButton>
   <back-icon></back-icon>
 </template>
 
@@ -16,7 +17,11 @@ export default {
 <style>
 @import "./assets/css/fonts.css";
 
+body {
+  background: #1e1e1e;
+}
+
 #app {
-  font-family: "nunito";
+  font-family: "nunito", sans-serif;
 }
 </style>
