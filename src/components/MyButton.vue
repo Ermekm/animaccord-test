@@ -77,9 +77,7 @@ export default {
       if (this.timerCount === 0) {
         this.timerCount = this.countdown;
         this.countDownTimer();
-        console.log(true);
       }
-      console.log(false);
     },
   },
 };

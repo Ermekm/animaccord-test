@@ -88,7 +88,6 @@ body {
 #app {
   font-family: "nunito", sans-serif;
 }
-
 .wrapper {
   display: flex;
   justify-content: space-between;
